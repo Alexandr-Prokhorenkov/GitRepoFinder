@@ -1,0 +1,64 @@
+@use "@shared/styles/mixins.scss" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ul, ol {
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+}
+
+::placeholder {
+  color: gray;
+  opacity: 1;
+}
+
+body {
+  @include font-main;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--background-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input, select, textarea, label, button, p {
+  font-family: 'Inter', sans-serif;
+}
+
+.app {
+  width: 1300px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+

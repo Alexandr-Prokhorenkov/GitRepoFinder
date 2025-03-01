@@ -1,0 +1,39 @@
+.searchInput {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  outline: 1px solid var(--border-color);
+  border-radius: 30px;
+  padding: 8px 12px;
+  font-family: var(--font-main);
+  transition:
+  border-color 0.3s ease,
+  box-shadow 0.3s ease;
+
+  .searchIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+
+    &::placeholder {
+      color: var(--placeholder-color);
+    }
+  }
+
+  &:hover {
+    outline: 2px solid var(--primary-color);
+  }
+
+  &:focus-within {
+    outline: 2px solid var(--primary-color);
+  }
+}
